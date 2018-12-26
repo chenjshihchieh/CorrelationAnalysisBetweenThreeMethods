@@ -1,0 +1,7 @@
+- Only include participants with ChangeInLocation Data, FBBias, or MCBias
+- Number of data points by year for ChangeInLocation:
+	Y1 = 92
+	Y2 = 17
+	Y3 = 3
+
+- Selected Columns: "PID", "Age", "AverageFBBias1", "AverageFBBias2", "AverageFBBias", "AverageMCBias1", "AverageMCBias2", "AverageMCBias", "ChangeInLocation1", "ChangeInLocation2"

@@ -4,4 +4,22 @@
 	Y2 = 17
 	Y3 = 3
 
-- Selected Columns: "PID", "Age", "AverageFBBias1", "AverageFBBias2", "AverageFBBias", "AverageMCBias1", "AverageMCBias2", "AverageMCBias", "ChangeInLocation1", "ChangeInLocation2"
+- Selected Columns: "PID", "Age", "AverageFBBias", "AverageMCBias", "ChangeInLocation1", "ChangeInLocation2"
+
+- Ran Little's MCAR test to see if the missing values were missing at random. This is to prepare for imputations if necessary/relevant.
+
+Doing three different tests: spearman, kendall, and point biserial (maybe?)
+
+Y1 only and removing failed controls
+n = 85
+
+Spearman
+- na's are deleted listwise
+
+Between AverageFBBias and ChangeInLocation1
+n = 84
+
+Partialling Age
+
+
+Partialling Age and AverageMCBias

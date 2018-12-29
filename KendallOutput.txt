@@ -2,14 +2,14 @@
 [1] "Participants who answered Control Question correctly: 85"
 [1] "Spearman between AverageFBBias and ChangeInLocation1"
 
-	Spearman's rank correlation rho
+	Kendall's rank correlation tau
 
 data:  AverageFBBias and ChangeInLocation1
-S = 93134, p-value = 0.04995
-alternative hypothesis: true rho is not equal to 0
+z = -1.9547, p-value = 0.05061
+alternative hypothesis: true tau is not equal to 0
 sample estimates:
-       rho 
--0.2242232 
+      tau 
+-0.185258 
 
 [1] "Spearman between AverageFBBias and ChangeInLocation1, Controlling for Age"
 Call:corr.p(r = part1.r, n = {
@@ -18,19 +18,19 @@ Call:corr.p(r = part1.r, n = {
 Correlation matrix 
 partial correlations 
                   AverageFBBias ChangeInLocation1
-AverageFBBias              1.00             -0.19
-ChangeInLocation1         -0.19              1.00
+AverageFBBias              1.00             -0.17
+ChangeInLocation1         -0.17              1.00
 Sample Size 
 [1] 84
 Probability values (Entries above the diagonal are adjusted for multiple tests.) 
 partial correlations 
                   AverageFBBias ChangeInLocation1
-AverageFBBias              0.00              0.08
-ChangeInLocation1          0.08              0.00
+AverageFBBias              0.00              0.12
+ChangeInLocation1          0.12              0.00
 
  Confidence intervals based upon normal theory.  To get bootstrapped values, try cor.ci
             lower     r upper    p
-AvFBB-ChIL1 -0.39 -0.19  0.02 0.08
+AvFBB-ChIL1 -0.37 -0.17  0.05 0.12
 [1] "Spearman between AverageFBBias and ChangeInLocation1, Controlling for Age and AverageMCBias"
 Call:corr.p(r = part2.r, n = {
     nrow(Y1dataNoFailControl) - 1
@@ -38,16 +38,16 @@ Call:corr.p(r = part2.r, n = {
 Correlation matrix 
 partial correlations 
                   AverageFBBias ChangeInLocation1
-AverageFBBias               1.0              -0.2
-ChangeInLocation1          -0.2               1.0
+AverageFBBias              1.00             -0.17
+ChangeInLocation1         -0.17              1.00
 Sample Size 
 [1] 84
 Probability values (Entries above the diagonal are adjusted for multiple tests.) 
 partial correlations 
                   AverageFBBias ChangeInLocation1
-AverageFBBias              0.00              0.07
-ChangeInLocation1          0.07              0.00
+AverageFBBias              0.00              0.11
+ChangeInLocation1          0.11              0.00
 
  Confidence intervals based upon normal theory.  To get bootstrapped values, try cor.ci
-            lower    r upper    p
-AvFBB-ChIL1  -0.4 -0.2  0.01 0.07
+            lower     r upper    p
+AvFBB-ChIL1 -0.37 -0.17  0.04 0.11

@@ -11,7 +11,7 @@ Y1dataNoFailControl <- apply(Y1dataNoFailControl, 2, as.numeric)
 print(LittleMCAR(Y1data))
 #hist(Y1data$AverageFBBias)
 #hist(Y1data$AverageMCBias)
-sink(file = "SpearmanOutput.txt")
+sink(file = "KendallOutput.txt")
 print(paste("Total Paritcipants:", (nrow(Y1data))))
 print(paste("Participants who answered Control Question correctly:", nrow(Y1dataNoFailControl)))
 

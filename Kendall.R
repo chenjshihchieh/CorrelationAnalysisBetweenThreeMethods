@@ -16,16 +16,16 @@ print(paste("Total Paritcipants:", (nrow(Y1data))))
 print(paste("Participants who answered Control Question correctly:", nrow(Y1dataNoFailControl)))
 
 print("Spearman between AverageFBBias and ChangeInLocation1")
-cor.results <- cor.test(formula = ~ AverageFBBias + ChangeInLocation1, data = Y1dataNoFailControl, method = "spearman")
+cor.results <- cor.test(formula = ~ AverageFBBias + ChangeInLocation1, data = Y1dataNoFailControl, method = "kendall")
 print(cor.results)
 
 print("Spearman between AverageFBBias and ChangeInLocation1, Controlling for Age")
-part1.r <- partial.r(data = Y1dataNoFailControl, x = c("AverageFBBias", "ChangeInLocation1"), y = "Age", method = "spearman")
+part1.r <- partial.r(data = Y1dataNoFailControl, x = c("AverageFBBias", "ChangeInLocation1"), y = "Age", method = "kendall")
 part1.cor <- corr.p(part1.r, n = {nrow(Y1dataNoFailControl) - 1})
 print(part1.cor, short = F)  
 
 print("Spearman between AverageFBBias and ChangeInLocation1, Controlling for Age and AverageMCBias")
-part2.r <- partial.r(data = Y1dataNoFailControl, x = c("AverageFBBias", "ChangeInLocation1"), y = c("Age", "AverageMCBias"), method = "spearman")
+part2.r <- partial.r(data = Y1dataNoFailControl, x = c("AverageFBBias", "ChangeInLocation1"), y = c("Age", "AverageMCBias"), method = "kendall")
 part2.cor <- corr.p(part2.r, n = {nrow(Y1dataNoFailControl) - 1})
 print(part2.cor, short = F) 
 

@@ -1,0 +1,137 @@
+[1] "Model for AverageFBBias and ChangeInLocation1"
+
+Call:
+glm(formula = ChangeInLocation1 ~ AverageFBBias, family = binomial, 
+    data = Y1dataNoFailControl)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4762  -1.0502  -0.8925   1.1825   1.7474  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)    0.28269    0.37498   0.754   0.4509  
+AverageFBBias -0.04535    0.02608  -1.739   0.0821 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 105.69  on 76  degrees of freedom
+Residual deviance: 102.46  on 75  degrees of freedom
+  (8 observations deleted due to missingness)
+AIC: 106.46
+
+Number of Fisher Scoring iterations: 4
+
+[1] "Model for AverageFBBias and ChangeInLocation1, Controlling for Age"
+
+Call:
+glm(formula = ChangeInLocation1 ~ Age * AverageFBBias, family = binomial, 
+    data = Y1dataNoFailControl)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.9048  -0.9464  -0.5989   1.0846   1.8714  
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)  
+(Intercept)       -5.91717    2.62232  -2.256   0.0240 *
+Age                1.30807    0.55538   2.355   0.0185 *
+AverageFBBias      0.12177    0.15478   0.787   0.4315  
+Age:AverageFBBias -0.03492    0.03356  -1.041   0.2980  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 104.039  on 75  degrees of freedom
+Residual deviance:  90.248  on 72  degrees of freedom
+  (9 observations deleted due to missingness)
+AIC: 98.248
+
+Number of Fisher Scoring iterations: 4
+
+[1] "Model for AverageFBBias and ChangeInLocation1, Controlling for Age and AverageMCBias"
+
+Call:
+glm(formula = ChangeInLocation1 ~ (AverageMCBias + Age + AverageFBBias)^3, 
+    family = binomial, data = Y1dataNoFailControl)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.7682  -0.9251  -0.6050   1.1125   1.7916  
+
+Coefficients:
+                                  Estimate Std. Error z value Pr(>|z|)  
+(Intercept)                     -5.6978075  3.4558401  -1.649   0.0992 .
+AverageMCBias                   -0.0760442  0.2889401  -0.263   0.7924  
+Age                              1.2919904  0.7346887   1.759   0.0787 .
+AverageFBBias                    0.1253196  0.1769637   0.708   0.4788  
+AverageMCBias:Age                0.0085227  0.0632172   0.135   0.8928  
+AverageMCBias:AverageFBBias      0.0043665  0.0147091   0.297   0.7666  
+Age:AverageFBBias               -0.0361040  0.0383627  -0.941   0.3466  
+AverageMCBias:Age:AverageFBBias -0.0005951  0.0034830  -0.171   0.8643  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 100.087  on 72  degrees of freedom
+Residual deviance:  86.561  on 65  degrees of freedom
+  (12 observations deleted due to missingness)
+AIC: 102.56
+
+Number of Fisher Scoring iterations: 4
+
+[1] "Model for AverageFBBias and ChangeInLocation1, Controlling for AverageMCBias"
+
+Call:
+glm(formula = ChangeInLocation1 ~ AverageMCBias * AverageFBBias, 
+    family = binomial, data = Y1dataNoFailControl)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.7085  -1.0438  -0.8888   1.2114   1.7233  
+
+Coefficients:
+                             Estimate Std. Error z value Pr(>|z|)  
+(Intercept)                  0.567554   0.484586   1.171    0.242  
+AverageMCBias               -0.050878   0.043477  -1.170    0.242  
+AverageFBBias               -0.050316   0.030138  -1.670    0.095 .
+AverageMCBias:AverageFBBias  0.001968   0.002647   0.744    0.457  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 101.719  on 73  degrees of freedom
+Residual deviance:  97.794  on 70  degrees of freedom
+  (11 observations deleted due to missingness)
+AIC: 105.79
+
+Number of Fisher Scoring iterations: 4
+
+
+Call:
+glm(formula = ChangeInLocation1 ~ Combined, family = binomial, 
+    data = Y1dataNoFailControl)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.170  -1.094  -1.037   1.263   1.386  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)
+(Intercept) -0.183808   0.244652  -0.751    0.452
+Combined    -0.007765   0.016890  -0.460    0.646
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 101.72  on 73  degrees of freedom
+Residual deviance: 101.51  on 72  degrees of freedom
+  (11 observations deleted due to missingness)
+AIC: 105.51
+
+Number of Fisher Scoring iterations: 4
+

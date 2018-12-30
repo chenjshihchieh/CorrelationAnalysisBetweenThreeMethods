@@ -1,6 +1,11 @@
 [1] "Total Paritcipants: 92"
 [1] "Participants who answered Control Question correctly: 85"
-[1] "Spearman between AverageFBBias and ChangeInLocation1"
+
+ 
+ 
+ 
+ 
+ Spearman between AverageFBBias and ChangeInLocation1 
 
 	Spearman's rank correlation rho
 
@@ -11,7 +16,13 @@ sample estimates:
        rho 
 -0.2242232 
 
-[1] "Spearman between AverageFBBias and ChangeInLocation1, Controlling for Age"
+
+ 
+ 
+ 
+ 
+ Spearman between AverageFBBias and ChangeInLocation1, Controlling for Age 
+ 
 Call:corr.p(r = part1.r, n = {
     nrow(Y1dataNoFailControl) - 1
 })
@@ -31,7 +42,13 @@ ChangeInLocation1          0.08              0.00
  Confidence intervals based upon normal theory.  To get bootstrapped values, try cor.ci
             lower     r upper    p
 AvFBB-ChIL1 -0.39 -0.19  0.02 0.08
-[1] "Spearman between AverageFBBias and ChangeInLocation1, Controlling for Age and AverageMCBias"
+
+ 
+ 
+ 
+ 
+ Spearman between AverageFBBias and ChangeInLocation1, Controlling for Age and AverageMCBias 
+ 
 Call:corr.p(r = part2.r, n = {
     nrow(Y1dataNoFailControl) - 1
 })
@@ -51,3 +68,19 @@ ChangeInLocation1          0.07              0.00
  Confidence intervals based upon normal theory.  To get bootstrapped values, try cor.ci
             lower    r upper    p
 AvFBB-ChIL1  -0.4 -0.2  0.01 0.07
+
+ 
+ 
+ 
+ 
+ Spearman between AverageFBBias - AverageMCBias and ChangeInLocation1 
+
+	Spearman's rank correlation rho
+
+data:  Combined and ChangeInLocation1
+S = 70576, p-value = 0.7022
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+        rho 
+-0.04518967 
+

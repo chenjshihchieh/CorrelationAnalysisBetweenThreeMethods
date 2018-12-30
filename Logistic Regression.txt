@@ -1,4 +1,9 @@
-[1] "Model for AverageFBBias and ChangeInLocation1"
+
+ 
+ 
+ 
+ 
+ Model for AverageFBBias and ChangeInLocation1 
 
 Call:
 glm(formula = ChangeInLocation1 ~ AverageFBBias, family = binomial, 
@@ -24,7 +29,12 @@ AIC: 106.46
 
 Number of Fisher Scoring iterations: 4
 
-[1] "Model for AverageFBBias and ChangeInLocation1, Controlling for Age"
+
+ 
+ 
+ 
+ 
+ Model for AverageFBBias and ChangeInLocation1, Controlling for Age 
 
 Call:
 glm(formula = ChangeInLocation1 ~ Age * AverageFBBias, family = binomial, 
@@ -52,7 +62,12 @@ AIC: 98.248
 
 Number of Fisher Scoring iterations: 4
 
-[1] "Model for AverageFBBias and ChangeInLocation1, Controlling for Age and AverageMCBias"
+
+ 
+ 
+ 
+ 
+ Model for AverageFBBias and ChangeInLocation1, Controlling for Age and AverageMCBias 
 
 Call:
 glm(formula = ChangeInLocation1 ~ (AverageMCBias + Age + AverageFBBias)^3, 
@@ -84,7 +99,12 @@ AIC: 102.56
 
 Number of Fisher Scoring iterations: 4
 
-[1] "Model for AverageFBBias and ChangeInLocation1, Controlling for AverageMCBias"
+
+ 
+ 
+ 
+ 
+ Model for AverageFBBias and ChangeInLocation1, Controlling for AverageMCBias 
 
 Call:
 glm(formula = ChangeInLocation1 ~ AverageMCBias * AverageFBBias, 
@@ -112,6 +132,12 @@ AIC: 105.79
 
 Number of Fisher Scoring iterations: 4
 
+
+ 
+ 
+ 
+ 
+ Model for AverageFBBias - AverageMCBias and ChangeInLocation1 
 
 Call:
 glm(formula = ChangeInLocation1 ~ Combined, family = binomial, 

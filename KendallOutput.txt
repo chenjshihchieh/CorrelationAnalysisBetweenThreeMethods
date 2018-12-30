@@ -1,6 +1,11 @@
 [1] "Total Paritcipants: 92"
 [1] "Participants who answered Control Question correctly: 85"
-[1] "Spearman between AverageFBBias and ChangeInLocation1"
+
+ 
+ 
+ 
+ 
+ Kendall between AverageFBBias and ChangeInLocation1 
 
 	Kendall's rank correlation tau
 
@@ -11,7 +16,13 @@ sample estimates:
       tau 
 -0.185258 
 
-[1] "Spearman between AverageFBBias and ChangeInLocation1, Controlling for Age"
+
+ 
+ 
+ 
+ 
+ Kendall between AverageFBBias and ChangeInLocation1, Controlling for Age 
+ 
 Call:corr.p(r = part1.r, n = {
     nrow(Y1dataNoFailControl) - 1
 })
@@ -31,7 +42,13 @@ ChangeInLocation1          0.12              0.00
  Confidence intervals based upon normal theory.  To get bootstrapped values, try cor.ci
             lower     r upper    p
 AvFBB-ChIL1 -0.37 -0.17  0.05 0.12
-[1] "Spearman between AverageFBBias and ChangeInLocation1, Controlling for Age and AverageMCBias"
+
+ 
+ 
+ 
+ 
+ Kendall between AverageFBBias and ChangeInLocation1, Controlling for Age and AverageMCBias 
+ 
 Call:corr.p(r = part2.r, n = {
     nrow(Y1dataNoFailControl) - 1
 })
@@ -51,3 +68,19 @@ ChangeInLocation1          0.11              0.00
  Confidence intervals based upon normal theory.  To get bootstrapped values, try cor.ci
             lower     r upper    p
 AvFBB-ChIL1 -0.37 -0.17  0.04 0.11
+
+ 
+ 
+ 
+ 
+ Kendall between AverageFBBias - AverageMCBias and ChangeInLocation1 
+
+	Kendall's rank correlation tau
+
+data:  Combined and ChangeInLocation1
+z = -0.3861, p-value = 0.6994
+alternative hypothesis: true tau is not equal to 0
+sample estimates:
+        tau 
+-0.03725788 
+

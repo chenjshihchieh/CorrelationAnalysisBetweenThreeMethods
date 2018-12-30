@@ -78,15 +78,24 @@ Deviance Residuals:
 -1.7682  -0.9251  -0.6050   1.1125   1.7916  
 
 Coefficients:
-                                  Estimate Std. Error z value Pr(>|z|)  
-(Intercept)                     -5.6978075  3.4558401  -1.649   0.0992 .
-AverageMCBias                   -0.0760442  0.2889401  -0.263   0.7924  
-Age                              1.2919904  0.7346887   1.759   0.0787 .
-AverageFBBias                    0.1253196  0.1769637   0.708   0.4788  
-AverageMCBias:Age                0.0085227  0.0632172   0.135   0.8928  
-AverageMCBias:AverageFBBias      0.0043665  0.0147091   0.297   0.7666  
-Age:AverageFBBias               -0.0361040  0.0383627  -0.941   0.3466  
-AverageMCBias:Age:AverageFBBias -0.0005951  0.0034830  -0.171   0.8643  
+                                  Estimate Std. Error z value
+(Intercept)                     -5.6978075  3.4558401  -1.649
+AverageMCBias                   -0.0760442  0.2889401  -0.263
+Age                              1.2919904  0.7346887   1.759
+AverageFBBias                    0.1253196  0.1769637   0.708
+AverageMCBias:Age                0.0085227  0.0632172   0.135
+AverageMCBias:AverageFBBias      0.0043665  0.0147091   0.297
+Age:AverageFBBias               -0.0361040  0.0383627  -0.941
+AverageMCBias:Age:AverageFBBias -0.0005951  0.0034830  -0.171
+                                Pr(>|z|)  
+(Intercept)                       0.0992 .
+AverageMCBias                     0.7924  
+Age                               0.0787 .
+AverageFBBias                     0.4788  
+AverageMCBias:Age                 0.8928  
+AverageMCBias:AverageFBBias       0.7666  
+Age:AverageFBBias                 0.3466  
+AverageMCBias:Age:AverageFBBias   0.8643  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
@@ -104,31 +113,31 @@ Number of Fisher Scoring iterations: 4
  
  
  
- Model for AverageFBBias and ChangeInLocation1, Controlling for AverageMCBias 
+ Model for AverageFBBias and ChangeInLocation1, Controlling for Age and AverageMCBias 
 
 Call:
-glm(formula = ChangeInLocation1 ~ AverageMCBias * AverageFBBias, 
+glm(formula = ChangeInLocation1 ~ AverageMCBias + Age + AverageFBBias, 
     family = binomial, data = Y1dataNoFailControl)
 
 Deviance Residuals: 
     Min       1Q   Median       3Q      Max  
--1.7085  -1.0438  -0.8888   1.2114   1.7233  
+-1.5900  -0.9323  -0.5690   1.0901   1.9949  
 
 Coefficients:
-                             Estimate Std. Error z value Pr(>|z|)  
-(Intercept)                  0.567554   0.484586   1.171    0.242  
-AverageMCBias               -0.050878   0.043477  -1.170    0.242  
-AverageFBBias               -0.050316   0.030138  -1.670    0.095 .
-AverageMCBias:AverageFBBias  0.001968   0.002647   0.744    0.457  
+              Estimate Std. Error z value Pr(>|z|)   
+(Intercept)   -3.59045    1.51368  -2.372  0.01769 * 
+AverageMCBias -0.01417    0.02798  -0.506  0.61253   
+Age            0.81787    0.29900   2.735  0.00623 **
+AverageFBBias -0.03455    0.02788  -1.239  0.21536   
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 (Dispersion parameter for binomial family taken to be 1)
 
-    Null deviance: 101.719  on 73  degrees of freedom
-Residual deviance:  97.794  on 70  degrees of freedom
-  (11 observations deleted due to missingness)
-AIC: 105.79
+    Null deviance: 100.087  on 72  degrees of freedom
+Residual deviance:  88.396  on 69  degrees of freedom
+  (12 observations deleted due to missingness)
+AIC: 96.396
 
 Number of Fisher Scoring iterations: 4
 

@@ -29,8 +29,8 @@ cat("\n", "\n", "\n", "\n", "\n", "Model for AverageFBBias and ChangeInLocation1
 results3 <- glm(formula = ChangeInLocation1 ~ (AverageMCBias + Age + AverageFBBias)^3, data = Y1dataNoFailControl, family = binomial)
 print(summary(results3), short = FALSE)
 
-cat("\n", "\n", "\n", "\n", "\n", "Model for AverageFBBias and ChangeInLocation1, Controlling for AverageMCBias", "\n")
-results4 <- glm(formula = ChangeInLocation1 ~ AverageMCBias * AverageFBBias, data = Y1dataNoFailControl, family = binomial)
+cat("\n", "\n", "\n", "\n", "\n", "Model for AverageFBBias and ChangeInLocation1, Controlling for Age and AverageMCBias", "\n")
+results4 <- glm(formula = ChangeInLocation1 ~ AverageMCBias + Age + AverageFBBias, data = Y1dataNoFailControl, family = binomial)
 print(summary(results4), short = FALSE)
 
 cat("\n", "\n", "\n", "\n", "\n", "Model for AverageFBBias - AverageMCBias and ChangeInLocation1", "\n")
